@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Naveen Mukala's Data Science Portfolio" />
+    <meta name="author" content="Naveen Mukala" />
+    <title>Naveen's Data Science Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            z-index: 1000;
+        }
+        .project-container {
+            padding: 2rem;
+            margin-left: 17rem; /* Adjust based on your sidebar width */
+        }
+        @media (max-width: 992px) {
+            .project-container {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Naveen Mukala</span>
+            <span class="d-none d-lg-block">
+                <div class="text-center text-white fw-bold">NAVEEN'S PORTFOLIO</div>
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Naveen Mukala" />
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="https://naveen-mukala.github.io/#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://naveen-mukala.github.io/#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://naveen-mukala.github.io/#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://naveen-mukala.github.io/#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://naveen-mukala.github.io/#Projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://naveen-mukala.github.io/#certifications">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Content -->
+    <div class="project-container">
+        <section id="project">
+            <h2 class="mb-5">Restaurant Recommendation App</h2>
+            <div class="mb-5">
+                <h3 class="mb-3">Interactive Demo</h3>
+                <p class="mb-3">Experience the Restaurant Recommendation App using cosine similarity below:</p>
+                <div style="position: relative; width: 100%; height: 800px;">
+                    <div id="loader" class="loader">Loading...</div>
+                    <iframe src="https://restaurant-recommendation-engine.streamlit.app/?embed_options=show_toolbar,show_footer,show_colored_line,dark_theme,light_theme,show_padding&embedded=true" 
+                            style="width: 100%; height: 100%; border: none;" 
+                            onload="document.getElementById('loader').style.display='none';">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="mb-5">
+                <h3 class="mb-3">Project Overview</h3>
+                <p>The Restaurant Recommendation App leverages advanced machine learning techniques to provide personalized dining suggestions. By utilizing cosine similarity, the app analyzes various factors such as cuisine type, location, and price range to offer tailored recommendations that match user preferences.</p>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="mb-3">Technical Implementation</h3>
+                <p>This project is built using a stack of powerful data science and web development tools:</p>
+                <ul>
+                    <li><strong>Python:</strong> The core programming language used for data processing and algorithm implementation.</li>
+                    <li><strong>Streamlit:</strong> Provides the interactive web interface, allowing for rapid development and deployment of the data app.</li>
+                    <li><strong>Pandas & NumPy:</strong> Used for efficient data manipulation and numerical operations.</li>
+                    <li><strong>Scikit-learn:</strong> Implements the TF-IDF vectorization and cosine similarity calculation for the recommendation engine.</li>
+                </ul>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="mb-3">Key Features</h3>
+                <ul>
+                    <li>Interactive user interface for inputting preferences</li>
+                    <li>Real-time recommendation generation</li>
+                    <li>Customizable filters for cuisine, location, and budget</li>
+                    <li>Detailed restaurant information display</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="mb-3">Source Code</h3>
+                <p>Explore the technical details and contribute to the project on GitHub:</p>
+                <a href="https://github.com/naveen-mukala/Restaurant_Recommender" target="_blank" class="btn btn-primary">View on GitHub</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light mt-auto">
+        <div class="container">
+            <p class="text-muted small mb-0">&copy; 2024 Naveen Mukala. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
